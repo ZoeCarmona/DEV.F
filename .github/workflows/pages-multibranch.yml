@@ -3,9 +3,7 @@ name: Multi-branch GitHub Pages
 on:
   push:
     branches:
-      - main
-      - intro_css
-      - basic_css_prop
+      - "**"
 
 permissions:
   contents: write
