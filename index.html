@@ -3,42 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox & Position</title>
+  <title>Flexbox & Position Demo</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header class="header">
-    CSS Layout Practice
-  </header>
-
-  <div class="card">
-
-    <div class="topic static">
-      <div class="dot"></div>
-      <div class="text">Introducción a Flexbox</div>
-    </div>
-
-    <div class="topic relative">
-      <div class="dot"></div>
-      <div class="text">Flexbox Parte 2</div>
-    </div>
-
-    <div class="topic absolute-parent">
-      <div class="dot absolute-dot"></div>
-      <div class="text">
-        Position en CSS (Parte 1): Static, Relative y Absolute
-      </div>
-    </div>
-
-    <div class="topic sticky">
-      <div class="dot"></div>
-      <div class="text">
-        Position en CSS (Parte 2): Fixed y Sticky
-      </div>
-    </div>
-
+  <!-- FIXED -->
+  <div class="fixed-box">
+    Fixed Header
   </div>
+
+  <h1>Flexbox Example</h1>
+
+  <!-- FLEXBOX SECTION -->
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h1>Position: Static / Relative / Absolute</h1>
+
+  <div class="position-container">
+    <div class="box static">Static</div>
+    <div class="box relative">Relative</div>
+    <div class="box absolute">Absolute</div>
+  </div>
+
+  <h1>Sticky Example</h1>
+
+  <div class="sticky-box">
+    Sticky Element
+  </div>
+
+  <!-- espacio para poder hacer scroll -->
+  <div class="spacer"></div>
 
 </body>
 </html>
