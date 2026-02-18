@@ -1,75 +1,81 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
-
-/* ================= FIXED ================= */
-.fixed-box {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: black;
+  background-color: #000814;
   color: white;
+  font-family: Arial, sans-serif;
   text-align: center;
 }
 
-/* espacio para que no lo tape */
-h1 {
-  margin-top: 60px;
+h1, h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
 }
 
-/* ================= FLEXBOX ================= */
-.flex-container {
-  display: flex;
-  justify-content: space-around;
-  background: lightgray;
-}
-
-.flex-item {
-  background: teal;
-  color: white;
-}
-
-/* ================= POSITION ================= */
-.position-container {
-  position: relative;
-  background: #ddd;
+.demo {
+  width: 700px;
+  height: 180px;
+  margin: 18px auto;
+  background-color: #001d3d;
+  border: 1px solid #0a2a5a;
 }
 
 .box {
-  background: coral;
-  margin: 10px;
-}
-
-/* static (default) */
-.static {
-  position: static;
-}
-
-/* relative */
-.relative {
-  position: relative;
-  left: 30px;
-}
-
-/* absolute */
-.absolute {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background: red;
-}
-
-/* ================= STICKY ================= */
-.sticky-box {
-  position: sticky;
-  top: 0;
-  background: purple;
+  width: 120px;
+  height: 60px;
+  background-color: #3a0ca3;
   color: white;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* espacio para scroll */
-.spacer {
-  height: 1000px;
+.tall {
+  height: 110px;
+}
+
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-align {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.wrap-align {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.chip {
+  width: 90px;
+  height: 45px;
+  margin: 6px;
+  background-color: #39ff14;
+  color: #001d3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

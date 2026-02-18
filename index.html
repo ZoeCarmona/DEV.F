@@ -3,78 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox & Position Demo</title>
+  <title>Flexbox Align Demo</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="fixed-box">
-    Fixed Header - Siempre visible arriba
+  <h1>Flexbox: Alineación y Centrado</h1>
+
+  <h2>Centrado total (horizontal y vertical)</h2>
+  <div class="demo center-all">
+    <div class="box">Centro</div>
   </div>
 
-  <h1>Flexbox Example</h1>
-
-  <div class="flex-container">
-    <div class="flex-item">
-      Item 1 <br>
-      Este elemento demuestra cómo flex distribuye espacio horizontalmente.
-    </div>
-    <div class="flex-item">
-      Item 2 <br>
-      Observa cómo todos se alinean automáticamente en la misma fila.
-    </div>
-    <div class="flex-item">
-      Item 3 <br>
-      Flexbox permite controlar alineación y distribución fácilmente.
-    </div>
+  <h2>Alineación específica por elemento (align-self)</h2>
+  <div class="demo row-align">
+    <div class="box">Normal</div>
+    <div class="box self-start">Start</div>
+    <div class="box self-center">Center</div>
+    <div class="box self-end">End</div>
   </div>
 
-  <h1>Position: Static / Relative / Absolute</h1>
-
-  <div class="position-container">
-    <div class="box static">
-      Static <br>
-      Este elemento sigue el flujo normal del documento.
-    </div>
-
-    <div class="box relative">
-      Relative <br>
-      Se mueve visualmente pero mantiene su espacio original.
-    </div>
-
-    <div class="box absolute">
-      Absolute <br>
-      Este elemento se posiciona respecto al contenedor padre.
-    </div>
-
-    <div class="box">
-      Este bloque sirve para notar cómo absolute no ocupa espacio normal.
-    </div>
+  <h2>Multilínea (wrap) + align-content</h2>
+  <div class="demo wrap-align">
+    <div class="chip">1</div>
+    <div class="chip">2</div>
+    <div class="chip">3</div>
+    <div class="chip">4</div>
+    <div class="chip">5</div>
+    <div class="chip">6</div>
+    <div class="chip">7</div>
+    <div class="chip">8</div>
+    <div class="chip">9</div>
+    <div class="chip">10</div>
+    <div class="chip">11</div>
+    <div class="chip">12</div>
   </div>
 
-  <h1>Sticky Example</h1>
-
-  <div class="sticky-box">
-    Sticky Element - Se queda pegado cuando haces scroll
-  </div>
-
-  <div>
-    <p>Contenido adicional para generar desplazamiento.</p>
-    <p>Más texto para que el scroll permita observar sticky y fixed.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-    <p>Excepteur sint occaecat cupidatat non proident.</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Más contenido.</p>
-    <ol>
-        <li>Se pone información para notar el scroll</li>
-        <li>Se pone información para notar el scroll</li>
-        <li>Se pone información para notar el scroll</li>
-        <li>Se pone información para notar el scroll</li>
-        <li>Se pone información para notar el scroll</li>
-    </ol>
+  <h2>Espacio horizontal (justify-content) + alineación vertical (align-items)</h2>
+  <div class="demo space-between">
+    <div class="box tall">A</div>
+    <div class="box">B</div>
+    <div class="box tall">C</div>
   </div>
 
 </body>
