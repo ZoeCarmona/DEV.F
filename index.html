@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Herencia en CSS</title>
-    <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-    <h2>Herencia en CSS <span class="line"></span></h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Herencia, Especificidad y Fuentes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-    <div class="card">
-        <ul>
-        <li>Herencia en CSS</li>
-        <li>Especificidad en CSS</li>
-        <li>Fuentes en CSS</li>
-        </ul>
+  <h1>Introduction to CSS</h1>
+  <p class="subtitle">Esta página muestra herencia, especificidad y fuentes.</p>
+
+  <div class="card">
+    <p>Texto dentro de la tarjeta (debe heredar color y fuente de la tarjeta).</p>
+
+    <p class="note">Este texto tiene una clase: debe cambiar por especificidad.</p>
+
+    <p id="warning">Este texto tiene ID: debe ganar sobre clase y elemento.</p>
+
+    <div class="inner">
+      <p>Texto dentro de un div interno (hereda, pero puede ser sobrescrito).</p>
+      <p class="note">Texto con clase dentro del div interno.</p>
     </div>
-    </body>
+  </div>
+
+  <div class="card alt-font">
+    <p>Esta tarjeta usa otra fuente solo para esta sección.</p>
+    <p class="note">La clase sigue aplicando, pero con otra fuente.</p>
+  </div>
+
+</body>
 </html>

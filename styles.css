@@ -1,36 +1,50 @@
 body {
-  background-color: #000814;
-  color: white;
+  background-color: lavenderblush;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
+}
+
+.subtitle {
   font-family: Arial, sans-serif;
 }
 
-h2 {
-  font-weight: 400;
-}
-
-.line {
-  color: #7c4dff;
-}
-
-.line::after {
-  content: "—";
-}
-
 .card {
-  background-color: #001d3d;
   width: fit-content;
+  margin: 20px auto;
+  background-color: chocolate;
+  color: white;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
-ul {
-  list-style: none;
+.card p {
+  color: white;
 }
 
-li {
-  margin: 16px 0;
+.note {
+  color: #ffee00;
+  font-family: Verdana, sans-serif;
 }
 
-li::before {
-  content: "●";
-  color: #39ff14;
-  margin-right: 10px;
+#warning {
+  color: #00ff99;
+  font-family: "Courier New", monospace;
+}
+
+.inner p {
+  color: #ffd6a5;
+}
+
+.card .inner .note {
+  color: #00d4ff;
+}
+
+.alt-font {
+  font-family: "Courier New", monospace;
+  background-color: #3a0ca3;
 }
