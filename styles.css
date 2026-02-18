@@ -14,7 +14,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #001d3d;
+  background-color: aquamarine;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,7 +29,6 @@ a {
 .nav {
   display: flex;
   gap: 18px;
-  background-color: aquamarine;
 }
 
 .nav a {
@@ -197,7 +196,8 @@ a {
 
 .footer {
   margin-top: 60px;
-  background-color: whitesmoke;
+  background-color: red;
+  color: white;
 }
 
 .footer-inner {
