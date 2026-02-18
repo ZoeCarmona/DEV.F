@@ -2,23 +2,43 @@ body {
   background-color: #000814;
   color: white;
   font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
 }
 
 .card {
   background-color: #001d3d;
   width: fit-content;
+  margin: 0 auto; /* para centrar la tarjeta sin padding */
 }
 
-ul {
-  list-style: none;
+/* cada renglón es flex */
+.topic {
+  display: flex;
+  align-items: center; /* alinea el punto con el texto */
+  justify-content: flex-start;
+  text-align: left; /* para que el texto dentro no quede centrado */
 }
 
-li {
-  margin: 18px 0;
+/* el puntito verde */
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #39ff14;
+  border-radius: 50%;
 }
 
-li::before {
-  content: "●";
-  color: #39ff14;
-  margin-right: 10px;
+/* separación sin padding */
+.text {
+  margin-left: 10px;
+}
+
+/* separaciones verticales sin padding */
+.topic + .topic {
+  margin-top: 18px;
 }
