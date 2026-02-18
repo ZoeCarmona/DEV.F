@@ -1,81 +1,262 @@
 body {
+  margin: 0;
+  font-family: Arial, sans-serif;
   background-color: #000814;
   color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
 }
 
-h1, h2 {
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #001d3d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.brand {
   font-family: "Times New Roman", Times, serif;
   font-weight: 200;
 }
 
-.demo {
-  width: 700px;
-  height: 180px;
-  margin: 18px auto;
-  background-color: #001d3d;
-  border: 1px solid #0a2a5a;
+.nav {
+  display: flex;
+  gap: 18px;
 }
 
-.box {
-  width: 120px;
-  height: 60px;
+.nav a {
+  opacity: 0.9;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
+.cta {
   background-color: #3a0ca3;
   color: white;
+}
+
+.spacer {
+  height: 70px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.hero {
   display: flex;
+  gap: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.tall {
-  height: 110px;
+.hero-text {
+  width: 55%;
 }
 
-.center-all {
+.hero-text h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
+}
+
+.hero-actions {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 12px;
 }
 
-.row-align {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: stretch;
-}
-
-.self-start {
-  align-self: flex-start;
-}
-
-.self-center {
-  align-self: center;
-}
-
-.self-end {
-  align-self: flex-end;
-}
-
-.wrap-align {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
-}
-
-.chip {
-  width: 90px;
-  height: 45px;
-  margin: 6px;
+.btn {
   background-color: #39ff14;
   color: #001d3d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.space-between {
+.btn.alt {
+  background-color: #3a0ca3;
+  color: white;
+}
+
+.hero-card {
+  width: 360px;
+  background-color: #001d3d;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #39ff14;
+  color: #001d3d;
+  z-index: 2;
+}
+
+.card-title {
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
+}
+
+.panel {
+  background-color: #001d3d;
+  position: relative;
+}
+
+.panel-header {
+  background-color: #0a2a5a;
+}
+
+.sticky-demo {
+  position: sticky;
+  top: 70px;
+  z-index: 3;
+}
+
+.relative-box {
+  position: relative;
+  background-color: #0a2a5a;
+  margin-top: 14px;
+}
+
+.label {
+  opacity: 0.9;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #3a0ca3;
+}
+
+.float-note {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  background-color: #3a0ca3;
+  z-index: 20;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  background-color: #001d3d;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
+}
+
+.link {
+  color: #39ff14;
+}
+
+.align-demo {
+  margin-top: 22px;
+  background-color: #001d3d;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.pill {
+  background-color: #3a0ca3;
+}
+
+.center {
+  align-self: flex-start;
+  background-color: #39ff14;
+  color: #001d3d;
+}
+
+.footer {
+  margin-top: 60px;
+  background-color: #001d3d;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.footer-col {
+  width: 280px;
+}
+
+.footer-title {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
+}
+
+.footer a {
+  display: block;
+  opacity: 0.9;
+}
+
+.footer a:hover {
+  opacity: 1;
+}
+
+.copyright {
+  text-align: center;
+  opacity: 0.8;
+  margin-top: 18px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 92%;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-card {
+    width: 100%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+  }
 }

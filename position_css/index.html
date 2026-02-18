@@ -3,48 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox Align Demo</title>
+  <title>Position + Flexbox + Navbar + Footer</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <h1>Flexbox: Alineación y Centrado</h1>
+  <header class="topbar">
+    <div class="brand">CSS Lab</div>
 
-  <h2>Centrado total (horizontal y vertical)</h2>
-  <div class="demo center-all">
-    <div class="box">Centro</div>
-  </div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#position">Position</a>
+      <a href="#flex">Flexbox</a>
+      <a href="#footer">Footer</a>
+    </nav>
 
-  <h2>Alineación específica por elemento (align-self)</h2>
-  <div class="demo row-align">
-    <div class="box">Normal</div>
-    <div class="box self-start">Start</div>
-    <div class="box self-center">Center</div>
-    <div class="box self-end">End</div>
-  </div>
+    <a class="cta" href="#flex">Start</a>
+  </header>
 
-  <h2>Multilínea (wrap) + align-content</h2>
-  <div class="demo wrap-align">
-    <div class="chip">1</div>
-    <div class="chip">2</div>
-    <div class="chip">3</div>
-    <div class="chip">4</div>
-    <div class="chip">5</div>
-    <div class="chip">6</div>
-    <div class="chip">7</div>
-    <div class="chip">8</div>
-    <div class="chip">9</div>
-    <div class="chip">10</div>
-    <div class="chip">11</div>
-    <div class="chip">12</div>
-  </div>
+  <div class="spacer"></div>
 
-  <h2>Espacio horizontal (justify-content) + alineación vertical (align-items)</h2>
-  <div class="demo space-between">
-    <div class="box tall">A</div>
-    <div class="box">B</div>
-    <div class="box tall">C</div>
-  </div>
+  <main class="container" id="home">
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Position, Flexbox, z-index & Media Queries</h1>
+        <p>Ejemplos prácticos en una sola página: navbar fija, sticky, relative/absolute, cards con flex y responsive básico.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#position">Ver Position</a>
+          <a class="btn alt" href="#flex">Ver Flexbox</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="badge">z-index</div>
+        <div class="card-title">Tarjeta</div>
+        <div class="card-text">La etiqueta está encima porque usa z-index.</div>
+      </div>
+    </section>
+
+    <section class="section" id="position">
+      <h2>Position: static / relative / absolute / sticky / fixed</h2>
+
+      <div class="panel">
+        <div class="panel-header sticky-demo">Sticky Header (se pega al hacer scroll)</div>
+
+        <div class="relative-box">
+          <div class="label">Contenedor relative</div>
+          <div class="absolute-box">Absolute</div>
+          <p>Este contenedor tiene position: relative. El cuadro "Absolute" se posiciona respecto a este contenedor.</p>
+          <p>Desplázate: el navbar está fixed arriba y este header está sticky dentro del panel.</p>
+        </div>
+
+        <div class="float-note">Nota flotante (fixed)</div>
+      </div>
+    </section>
+
+    <section class="section" id="flex">
+      <h2>Flexbox práctico: cards, alineación y wrap</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Card 1</h3>
+          <p>Distribución con flex-wrap y separación con gap.</p>
+          <a class="link" href="#home">Ir arriba</a>
+        </article>
+
+        <article class="card">
+          <h3>Card 2</h3>
+          <p>Alineación vertical y horizontal dentro de cada card.</p>
+          <a class="link" href="#home">Ir arriba</a>
+        </article>
+
+        <article class="card">
+          <h3>Card 3</h3>
+          <p>Responsive: en pantallas pequeñas se apilan.</p>
+          <a class="link" href="#home">Ir arriba</a>
+        </article>
+
+        <article class="card">
+          <h3>Card 4</h3>
+          <p>Más contenido para forzar multilínea y ver wrap.</p>
+          <a class="link" href="#home">Ir arriba</a>
+        </article>
+      </div>
+
+      <div class="align-demo">
+        <div class="pill">Left</div>
+        <div class="pill center">Center (align-self)</div>
+        <div class="pill">Right</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-title">CSS Lab</div>
+        <div>Navbar + Footer + Position + Flexbox</div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-title">Links</div>
+        <a href="#home">Home</a>
+        <a href="#position">Position</a>
+        <a href="#flex">Flexbox</a>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-title">Contacto</div>
+        <div>Email: example@mail.com</div>
+        <div>CDMX</div>
+      </div>
+    </div>
+    <div class="copyright">© 2026</div>
+  </footer>
 
 </body>
 </html>
