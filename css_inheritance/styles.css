@@ -1,0 +1,36 @@
+body {
+  background-color: #000814;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.line {
+  color: #7c4dff;
+}
+
+.line::after {
+  content: "—";
+}
+
+.card {
+  background-color: #001d3d;
+  width: fit-content;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 16px 0;
+}
+
+li::before {
+  content: "●";
+  color: #39ff14;
+  margin-right: 10px;
+}
