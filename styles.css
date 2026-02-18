@@ -29,6 +29,7 @@ a {
 .nav {
   display: flex;
   gap: 18px;
+  background-color: aquamarine;
 }
 
 .nav a {
@@ -196,7 +197,7 @@ a {
 
 .footer {
   margin-top: 60px;
-  background-color: #001d3d;
+  background-color: whitesmoke;
 }
 
 .footer-inner {
